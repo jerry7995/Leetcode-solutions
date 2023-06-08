@@ -1,0 +1,5 @@
+def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        X,Y= Counter(ransomNote),Counter(magazine)
+        if X & Y == X:
+            return True
+        return False
